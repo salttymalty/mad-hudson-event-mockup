@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>The Unwind - Chicago Watch Meetup | Mad Hudson Watches</title>
   <meta name="description" content="The Unwind is a Chicago watch meetup and kickback from Mad Hudson at Pour Souls Cocktail Store on May 23, 2026, with Farr + Swit, Alexander James Watches, cocktails, and event-exclusive deals.">
+  <link rel="canonical" href="https://madhudsonwatches.com/pages/chicago-watch-night">
+  <meta property="og:type" content="event">
+  <meta property="og:title" content="The Unwind - Chicago Watch Meetup">
+  <meta property="og:description" content="Mad Hudson's first Chicago meetup at Pour Souls with Farr + Swit and Alexander James Watches. May 23, 3-7 PM.">
+  <meta property="og:url" content="https://madhudsonwatches.com/pages/chicago-watch-night">
+  <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Broken_Time_Front_View.jpg?v=1772047746">
+  <meta name="twitter:card" content="summary_large_image">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
 
@@ -16,7 +23,7 @@
       --color-ink: #121212;
       --color-soft: #5f5f5f;
       --color-muted: #8b8b8b;
-      --color-line: #d8d8d8;
+      --color-line: #d6d6d6;
       --color-panel: #f5f5f5;
       --color-accent: #7f3c31;
       --color-button: 18, 18, 18;
@@ -304,15 +311,15 @@
       margin-top: 3rem;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
+      gap: 1.1rem;
     }
 
     .proof-card {
       min-height: 112px;
       display: grid;
-      grid-template-columns: 72px minmax(0, 1fr);
+      grid-template-columns: 78px minmax(0, 1fr);
       align-items: center;
-      gap: 1.2rem;
+      gap: 1.25rem;
       padding: 1rem;
       border: 1px solid var(--color-line);
       border-radius: 4px;
@@ -323,11 +330,16 @@
 
     .proof-card img {
       grid-row: 1 / span 2;
-      width: 72px;
-      height: 90px;
+      width: 78px;
+      height: 92px;
       object-fit: cover;
       border-radius: 3px;
-      background: var(--color-panel);
+      background: #fafafa;
+    }
+
+    .proof-card img.contain {
+      object-fit: contain;
+      padding: 0.45rem;
     }
 
     .proof-card span {
@@ -454,6 +466,41 @@
       border: 1px solid var(--color-line);
     }
 
+    .tile-media.contain {
+      object-fit: contain;
+      padding: 1.2rem;
+    }
+
+    .deal-mark {
+      min-height: 100%;
+      aspect-ratio: 4 / 3;
+      display: grid;
+      align-content: center;
+      gap: 0.7rem;
+      padding: 2rem;
+      border: 1px solid var(--color-line);
+      border-radius: 3px;
+      background: var(--color-ink);
+      color: #fff;
+    }
+
+    .deal-mark span {
+      color: rgba(255,255,255,0.58);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.08rem;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .deal-mark strong {
+      color: #fff;
+      font-size: 2.15rem;
+      font-weight: 500;
+      letter-spacing: 0.02rem;
+      line-height: 1.1;
+    }
+
     .tile-index {
       color: var(--color-accent);
       font-size: 1.15rem;
@@ -470,6 +517,34 @@
       color: var(--color-soft);
       font-size: 1.45rem;
       line-height: 1.5;
+    }
+
+    .text-link {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--color-ink);
+      font-size: 1.28rem;
+      font-weight: 600;
+      line-height: 1.2;
+      text-decoration-thickness: 1px;
+    }
+
+    .text-link::after {
+      content: "";
+      color: var(--color-accent);
+      width: 0.42rem;
+      height: 0.42rem;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      transform: translateY(-0.08rem) rotate(45deg);
+    }
+
+    .meta-link {
+      color: var(--color-ink);
+      font-weight: 500;
+      text-decoration-thickness: 1px;
     }
 
     .faq-grid {
@@ -505,6 +580,12 @@
 
     .product {
       border-radius: 4px;
+    }
+
+    .product a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
     }
 
     .product img {
@@ -606,6 +687,11 @@
       font-size: 1.4rem;
     }
 
+    footer a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+    }
+
     @media (max-width: 989px) {
       .site-header {
         min-height: 96px;
@@ -698,9 +784,71 @@
         min-height: 0;
       }
 
+      .text-link {
+        font-size: 1.35rem;
+      }
+
       .brand-strip,
       .brand-strip img {
         height: 104px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 1.5rem;
+      }
+
+      .announcement {
+        min-height: 38px;
+        font-size: 1.25rem;
+      }
+
+      .event-hero {
+        padding-top: 4.2rem;
+      }
+
+      .eyebrow {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 3.8rem;
+      }
+
+      .hero-copy {
+        margin-top: 1.8rem;
+        font-size: 1.55rem;
+        line-height: 1.5;
+      }
+
+      .proof-card {
+        grid-template-columns: 74px minmax(0, 1fr);
+        padding: 0.9rem;
+      }
+
+      .proof-card img {
+        width: 74px;
+        height: 90px;
+      }
+
+      .section-title {
+        font-size: 2.7rem;
+      }
+
+      .section-copy {
+        font-size: 1.55rem;
+        line-height: 1.6;
+      }
+
+      .tile,
+      .faq-item {
+        padding: 1.6rem;
+      }
+
+      .final-cta h2 {
+        font-size: 2.8rem;
       }
     }
   </style>
@@ -713,7 +861,32 @@
           "@id": "https://madhudsonwatches.com/#organization",
           "name": "Mad Hudson Watches",
           "url": "https://madhudsonwatches.com/",
-          "logo": "https://madhudsonwatches.com/cdn/shop/files/Mad_Hudson_Madman_Face_Logo.gif?v=1771269533&width=220"
+          "logo": "https://madhudsonwatches.com/cdn/shop/files/Mad_Hudson_Madman_Face_Logo.gif?v=1771269533&width=220",
+          "sameAs": [
+            "https://www.instagram.com/madhudsonwatches/"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#farrandswit",
+          "name": "Farr + Swit",
+          "url": "https://www.farrandswit.com/",
+          "image": "https://static.wixstatic.com/media/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg/v1/fill/w_846,h_889,al_c,q_85,enc_auto/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg",
+          "sameAs": [
+            "https://www.instagram.com/farrandswit/"
+          ],
+          "description": "Chicago watch company participating in The Unwind."
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#alexanderjames",
+          "name": "Alexander James Watches",
+          "url": "https://alexanderjameswatches.com/",
+          "image": "https://alexanderjameswatches.com/cdn/shop/files/both-main-updated_dd62494e-4723-4a89-bc86-d1a9eb0be28d.jpg?v=1751509629&width=1200",
+          "sameAs": [
+            "https://www.instagram.com/alexanderjameswatches/"
+          ],
+          "description": "Independent watch company based in Chicago participating in The Unwind."
         },
         {
           "@type": "WebSite",
@@ -725,9 +898,18 @@
           }
         },
         {
-          "@type": "Place",
+          "@type": [
+            "Place",
+            "LocalBusiness"
+          ],
           "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue",
           "name": "Pour Souls Cocktail Store",
+          "url": "https://www.poursoulschicago.com/",
+          "image": "https://images.squarespace-cdn.com/content/v1/651ef371ae30ac16bcd4ede7/a923be5b-3777-4155-9243-39e874cf2861/Screen+Shot+2023-10-03+at+7.09.36+AM.png?format=1500w",
+          "telephone": "+1-773-206-3439",
+          "sameAs": [
+            "https://www.instagram.com/poursoulschicago/"
+          ],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "1740 W Division St",
@@ -791,12 +973,38 @@
           "eventStatus": "https://schema.org/EventScheduled",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "isAccessibleForFree": true,
+          "keywords": "Chicago watch meetup, Mad Hudson, Farr + Swit, Alexander James Watches, Pour Souls, microbrand watches",
+          "image": [
+            "https://alexanderjameswatches.com/cdn/shop/files/both-main-updated_dd62494e-4723-4a89-bc86-d1a9eb0be28d.jpg?v=1751509629&width=1200",
+            "https://static.wixstatic.com/media/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg/v1/fill/w_846,h_889,al_c,q_85,enc_auto/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg",
+            "https://images.squarespace-cdn.com/content/v1/651ef371ae30ac16bcd4ede7/a923be5b-3777-4155-9243-39e874cf2861/Screen+Shot+2023-10-03+at+7.09.36+AM.png?format=1500w"
+          ],
           "location": {
             "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue"
           },
           "organizer": {
             "@id": "https://madhudsonwatches.com/#organization"
-          }
+          },
+          "offers": {
+            "@type": "Offer",
+            "name": "Free entry",
+            "url": "https://madhudsonwatches.com/pages/chicago-watch-night",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-05-09T00:00:00-05:00"
+          },
+          "contributor": [
+            {
+              "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#farrandswit"
+            },
+            {
+              "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#alexanderjames"
+            },
+            {
+              "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue"
+            }
+          ]
         }
       ]
     }
@@ -805,12 +1013,12 @@
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a href="#">shop</a>
-      <a href="#">about mad hudson</a>
-      <a href="#">faq</a>
-      <a class="active" href="#">events</a>
+      <a href="https://madhudsonwatches.com/collections/all">shop</a>
+      <a href="https://madhudsonwatches.com/pages/about-us">about mad hudson</a>
+      <a href="https://madhudsonwatches.com/pages/faq">faq</a>
+      <a class="active" href="https://madhudsonwatches.com/pages/events" aria-current="page">events</a>
     </nav>
-    <a class="logo" href="#" aria-label="Mad Hudson Watches">
+    <a class="logo" href="https://madhudsonwatches.com/" aria-label="Mad Hudson Watches">
       <img src="https://madhudsonwatches.com/cdn/shop/files/Mad_Hudson_Madman_Face_Logo.gif?v=1771269533&width=110" alt="Mad Hudson Watches logo">
     </a>
     <div class="header-actions">
@@ -823,7 +1031,7 @@
     </div>
   </header>
 
-  <div class="announcement">The Unwind. May 23, 3-7 PM at Pour Souls Cocktail Store.</div>
+  <div class="announcement">The Unwind / May 23, 3-7 PM / Pour Souls Cocktail Store</div>
 
   <main id="MainContent">
     <div class="breadcrumb">Home <span>/</span> Events <span>/</span> The Unwind</div>
@@ -834,17 +1042,17 @@
         <h1 id="event-title">The Unwind</h1>
         <p class="hero-copy">Chicago! we're hosting our first ever meetup at Pour Souls in Chicago with Farr + Swit and Alexander James Watches. it's gonna be a great time. come through, bring your friends, check out some watches, and have some stellar cocktails.</p>
         <div class="partner-proof" aria-label="Featured event partners">
-          <a class="proof-card" href="https://alexanderjameswatches.com/pages/about">
-            <img src="https://alexanderjameswatches.com/cdn/shop/files/both-main-updated_dd62494e-4723-4a89-bc86-d1a9eb0be28d.jpg?v=1751509629&width=600" alt="Alexander James watches">
+          <a class="proof-card" href="https://alexanderjameswatches.com/" target="_blank" rel="noopener">
+            <img class="contain" src="https://alexanderjameswatches.com/cdn/shop/files/both-main-updated_dd62494e-4723-4a89-bc86-d1a9eb0be28d.jpg?v=1751509629&width=600" alt="Alexander James watches">
             <span>With</span>
             <strong>Alexander James</strong>
           </a>
-          <a class="proof-card" href="https://www.farrandswit.com/product-page/retro-digital-mix-tape-vol-2">
-            <img src="https://static.wixstatic.com/media/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg/v1/fill/w_500,h_625,al_c,q_85,enc_auto/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg" alt="Farr + Swit Mix Tape watch">
+          <a class="proof-card" href="https://www.farrandswit.com/" target="_blank" rel="noopener">
+            <img class="contain" src="https://static.wixstatic.com/media/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg/v1/fill/w_500,h_625,al_c,q_85,enc_auto/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg" alt="Farr + Swit Mix Tape watch">
             <span>With</span>
             <strong>Farr + Swit</strong>
           </a>
-          <a class="proof-card" href="https://www.poursoulschicago.com/">
+          <a class="proof-card" href="https://www.poursoulschicago.com/" target="_blank" rel="noopener">
             <img src="https://images.squarespace-cdn.com/content/v1/651ef371ae30ac16bcd4ede7/a923be5b-3777-4155-9243-39e874cf2861/Screen+Shot+2023-10-03+at+7.09.36+AM.png?format=500w" alt="Pour Souls in Chicago">
             <span>Cocktails by</span>
             <strong>Pour Souls</strong>
@@ -861,11 +1069,11 @@
         <dl class="fact-list">
           <div class="fact">
             <dt>Date</dt>
-            <dd>May 23, 2026</dd>
+            <dd><time datetime="2026-05-23">May 23, 2026</time></dd>
           </div>
           <div class="fact">
             <dt>Time</dt>
-            <dd>3-7 PM</dd>
+            <dd><time datetime="2026-05-23T15:00:00-05:00">3</time>-<time datetime="2026-05-23T19:00:00-05:00">7 PM</time></dd>
           </div>
           <div class="fact">
             <dt>Venue</dt>
@@ -873,7 +1081,7 @@
           </div>
           <div class="fact">
             <dt>Address</dt>
-            <dd>1740 W Division St, Chicago</dd>
+            <dd><a class="meta-link" href="https://www.google.com/maps/search/?api=1&query=Pour%20Souls%20Cocktail%20Store%201740%20W%20Division%20St%20Chicago" target="_blank" rel="noopener">1740 W Division St, Chicago</a></dd>
           </div>
           <div class="fact">
             <dt>Entry</dt>
@@ -899,24 +1107,31 @@
 
         <div class="tile-grid" aria-label="Who you will see at the event">
           <article class="tile">
-            <img class="tile-media" src="https://alexanderjameswatches.com/cdn/shop/files/both-main-updated_dd62494e-4723-4a89-bc86-d1a9eb0be28d.jpg?v=1751509629&width=900" alt="Alexander James watches">
+            <img class="tile-media" src="https://alexanderjameswatches.com/cdn/shop/files/both-main-updated_dd62494e-4723-4a89-bc86-d1a9eb0be28d.jpg?v=1751509629&width=900" alt="Alexander James watches" loading="eager" decoding="async">
             <span class="tile-index">01</span>
             <h3>Alexander James</h3>
             <p>Independent watches on-site.</p>
+            <a class="text-link" href="https://alexanderjameswatches.com/" target="_blank" rel="noopener">Visit Alexander James</a>
           </article>
           <article class="tile">
-            <img class="tile-media" src="https://static.wixstatic.com/media/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg" alt="Farr + Swit Mix Tape watch">
+            <img class="tile-media contain" src="https://static.wixstatic.com/media/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/cad419_712144534ee64ddfb7869b873ece5f9a~mv2.jpg" alt="Farr + Swit Mix Tape watch" loading="eager" decoding="async">
             <span class="tile-index">02</span>
             <h3>Farr + Swit</h3>
             <p>Independent watches on-site.</p>
+            <a class="text-link" href="https://www.farrandswit.com/" target="_blank" rel="noopener">Visit Farr + Swit</a>
           </article>
           <article class="tile">
-            <img class="tile-media" src="https://images.squarespace-cdn.com/content/v1/651ef371ae30ac16bcd4ede7/a923be5b-3777-4155-9243-39e874cf2861/Screen+Shot+2023-10-03+at+7.09.36+AM.png?format=900w" alt="Pour Souls in Chicago">
+            <img class="tile-media" src="https://images.squarespace-cdn.com/content/v1/651ef371ae30ac16bcd4ede7/a923be5b-3777-4155-9243-39e874cf2861/Screen+Shot+2023-10-03+at+7.09.36+AM.png?format=900w" alt="Pour Souls in Chicago" loading="eager" decoding="async">
             <span class="tile-index">03</span>
             <h3>Pour Souls</h3>
             <p>Cocktails by the host venue.</p>
+            <a class="text-link" href="https://www.poursoulschicago.com/" target="_blank" rel="noopener">Visit Pour Souls</a>
           </article>
           <article class="tile">
+            <div class="deal-mark" aria-hidden="true">
+              <span>Event exclusive</span>
+              <strong>Deals & discounts</strong>
+            </div>
             <span class="tile-index">04</span>
             <h3>Event exclusives</h3>
             <p>Deals and discounts available at the meetup.</p>
@@ -932,24 +1147,30 @@
             <p class="eyebrow">Mad Hudson pieces</p>
             <h2 class="section-title" id="table-title">On the table.</h2>
           </div>
-          <p class="section-copy">Expected Mad Hudson pieces for the table. Confirm the final lineup before this moves from mockup to live site.</p>
+          <p class="section-copy">[insert final Mad Hudson table lineup here]</p>
         </div>
 
         <div class="product-strip">
           <article class="product">
-            <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Broken_Time_Front_View.jpg?v=1772047746" alt="Broken Time watch by Brad Podray">
-            <h3>Broken Time</h3>
-            <p>Expected</p>
+            <a href="https://madhudsonwatches.com/products/broken-time-brad-podray">
+              <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Broken_Time_Front_View.jpg?v=1772047746" alt="Broken Time watch by Brad Podray" loading="eager" decoding="async">
+              <h3>Broken Time</h3>
+              <p>View product</p>
+            </a>
           </article>
           <article class="product">
-            <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/CD_Watch_front_view.png?v=1772061571" alt="CD Watch by Riki Prosper">
-            <h3>CD Watch</h3>
-            <p>Expected</p>
+            <a href="https://madhudsonwatches.com/products/cd-watch-riki-prosper">
+              <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/CD_Watch_front_view.png?v=1772061571" alt="CD Watch by Riki Prosper" loading="eager" decoding="async">
+              <h3>CD Watch</h3>
+              <p>View product</p>
+            </a>
           </article>
           <article class="product">
-            <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Eddie_Blue_light_flare.jpg?v=1772062678" alt="Eddie Watch">
-            <h3>Eddie Watch</h3>
-            <p>Expected</p>
+            <a href="https://madhudsonwatches.com/products/the-eddie-watch">
+              <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Eddie_Blue_light_flare.jpg?v=1772062678" alt="Eddie Watch" loading="eager" decoding="async">
+              <h3>Eddie Watch</h3>
+              <p>View product</p>
+            </a>
           </article>
         </div>
       </div>
@@ -962,7 +1183,7 @@
             <p class="eyebrow">Logistics</p>
             <h2 class="section-title" id="logistics-title">Before you go.</h2>
           </div>
-          <p class="section-copy">Date, time, venue, and address are confirmed. Before the site page goes live, confirm any age, capacity, parking, transit, or accessibility notes from Pour Souls.</p>
+          <p class="section-copy">Date, time, venue, and address are confirmed. [insert parking, transit, age, or access notes here]</p>
         </div>
 
         <div class="faq-grid">
@@ -972,15 +1193,15 @@
           </article>
           <article class="faq-item">
             <h3>Getting there</h3>
-            <p>Pour Souls Cocktail Store, 1740 W Division St, Chicago. Add parking, transit, or rideshare notes if the venue provides them.</p>
+            <p>Pour Souls Cocktail Store, 1740 W Division St, Chicago. <a class="meta-link" href="https://www.google.com/maps/search/?api=1&query=Pour%20Souls%20Cocktail%20Store%201740%20W%20Division%20St%20Chicago" target="_blank" rel="noopener">Open in maps.</a> [insert parking / transit note]</p>
           </article>
           <article class="faq-item">
             <h3>At the venue</h3>
-            <p>Watch meetup and kickback with shop, cocktails, DJ, and event-exclusive deals. Confirm age requirements before the live page goes up.</p>
+            <p>Watches, cocktails, DJ, and event-exclusive deals. [insert age policy]</p>
           </article>
           <article class="faq-item">
             <h3>Access</h3>
-            <p>Add an accessibility or contact note before publishing so people know who to reach with event questions.</p>
+            <p>[insert accessibility or contact note]</p>
           </article>
         </div>
       </div>
@@ -1003,7 +1224,7 @@
 
   <footer>
     <h2>join the madness.</h2>
-    <p>follow mad hudson</p>
+    <p><a href="https://www.instagram.com/madhudsonwatches/" target="_blank" rel="noopener">follow mad hudson</a></p>
   </footer>
 </body>
 </html>
