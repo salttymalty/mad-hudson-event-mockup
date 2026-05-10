@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Chicago Watch Night - Mad Hudson Watches</title>
-  <meta name="description" content="Mad Hudson, Farr + Swit, Alexander James Watches, and Pour Souls Chicago are gathering for a local independent watch night.">
+  <meta name="description" content="Chicago Watch Night event page for Mad Hudson Watches. Date, RSVP, and final event copy to be confirmed.">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
 
@@ -13,44 +13,49 @@
       --font-heading-family: "Bricolage Grotesque", sans-serif;
       --color-foreground: 18, 18, 18;
       --color-background: 255, 255, 255;
-      --color-button: 255, 255, 255;
-      --color-button-text: 18, 18, 18;
+      --color-ink: #121212;
+      --color-soft: #5f5f5f;
+      --color-muted: #8b8b8b;
+      --color-line: #d8d8d8;
+      --color-panel: #f5f5f5;
+      --color-accent: #7f3c31;
+      --color-button: 18, 18, 18;
+      --color-button-text: 255, 255, 255;
       --buttons-radius: 4px;
       --buttons-radius-outset: 5px;
       --buttons-border-width: 1px;
       --buttons-border-offset: 0.3px;
-      --page-width: 134rem;
+      --page-width: 1180px;
     }
 
     * { box-sizing: border-box; }
 
-    html {
-      font-size: 62.5%;
-    }
+    html { font-size: 62.5%; }
 
     body {
       margin: 0;
       min-height: 100%;
       background: rgb(var(--color-background));
-      color: rgba(var(--color-foreground), 0.75);
+      color: var(--color-soft);
       font-family: var(--font-body-family);
       font-size: 1.6rem;
       font-weight: 400;
-      letter-spacing: 0.06rem;
-      line-height: 1.8;
+      letter-spacing: 0.03rem;
+      line-height: 1.65;
     }
 
-    a { color: inherit; text-underline-offset: 0.3rem; }
-    img { display: block; max-width: 100%; }
+    a {
+      color: inherit;
+      text-underline-offset: 0.3rem;
+    }
 
-    .page-width {
-      max-width: var(--page-width);
-      margin: 0 auto;
-      padding: 0 5rem;
+    img {
+      display: block;
+      max-width: 100%;
     }
 
     .site-header {
-      min-height: 129px;
+      min-height: 118px;
       display: grid;
       grid-template-columns: 1fr auto 1fr;
       align-items: center;
@@ -58,12 +63,13 @@
       padding: 1.8rem 5rem;
       background: #fff;
       color: rgb(var(--color-foreground));
+      border-bottom: 1px solid var(--color-line);
     }
 
     .nav {
       display: flex;
       align-items: center;
-      gap: 2.6rem;
+      gap: 2.4rem;
       text-transform: lowercase;
     }
 
@@ -79,7 +85,7 @@
     }
 
     .logo img {
-      width: 110px;
+      width: 104px;
       height: auto;
     }
 
@@ -167,63 +173,94 @@
       background: #000;
       color: #fff;
       text-align: center;
-      min-height: 42px;
+      min-height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 0.6rem 1rem;
-      font-size: 1.6rem;
-      font-weight: 600;
+      font-size: 1.45rem;
+      font-weight: 500;
       line-height: 1.2;
     }
 
     .breadcrumb {
-      height: 30px;
+      max-width: var(--page-width);
+      margin: 0 auto;
+      min-height: 42px;
       display: flex;
       align-items: center;
-      padding: 0 1.5rem;
-      font-size: 0.9rem;
-      color: rgba(var(--color-foreground), 0.55);
+      padding: 0 3rem;
+      font-size: 1rem;
+      color: var(--color-muted);
     }
 
     .breadcrumb span { margin: 0 0.55rem; }
 
-    .rich-text {
-      background: #121212;
-      color: #fff;
-      text-align: center;
-      padding: 6.2rem 5rem 7rem;
-      border-bottom: 24px solid #2b2b2b;
+    h1,
+    h2,
+    h3,
+    p,
+    dl,
+    dd {
+      margin: 0;
     }
 
     h1,
     h2,
     h3 {
-      margin: 0;
       font-family: var(--font-heading-family);
       font-weight: 400;
-      letter-spacing: 0.078rem;
-      line-height: 1.23;
-      color: inherit;
+      letter-spacing: 0.03rem;
+      line-height: 1.14;
+      color: var(--color-ink);
+    }
+
+    .event-hero {
+      max-width: var(--page-width);
+      margin: 0 auto;
+      padding: 7.8rem 3rem 7rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 7rem;
+      align-items: start;
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .eyebrow {
+      margin-bottom: 2rem;
+      color: var(--color-accent);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.12rem;
+      line-height: 1.2;
+      text-transform: uppercase;
     }
 
     h1 {
-      font-size: 5.2rem;
-      margin-bottom: 2.4rem;
+      max-width: 760px;
+      font-size: 6.4rem;
     }
 
-    .rich-text p {
-      max-width: 1090px;
-      margin: 0 auto 2.6rem;
-      color: rgba(255,255,255,0.75);
-      font-size: 1.6rem;
-      font-weight: 600;
-      line-height: 1.5;
+    .hero-copy {
+      max-width: 720px;
+      margin-top: 2.2rem;
+      color: var(--color-soft);
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      margin-top: 3.2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      flex-wrap: wrap;
     }
 
     .button {
-      min-width: 122px;
-      min-height: 47px;
+      min-width: 132px;
+      min-height: 48px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -235,12 +272,12 @@
       color: rgb(var(--color-button-text));
       cursor: pointer;
       font: inherit;
-      font-size: 1.5rem;
-      letter-spacing: 0.1rem;
+      font-size: 1.45rem;
+      font-weight: 500;
+      letter-spacing: 0.06rem;
       line-height: 1.2;
       text-decoration: none;
       appearance: none;
-      transition: box-shadow 100ms ease;
       z-index: 0;
     }
 
@@ -253,108 +290,178 @@
       box-shadow:
         0 0 0 calc(var(--buttons-border-width) + var(--buttons-border-offset)) rgba(var(--color-button-text), 0),
         0 0 0 var(--buttons-border-width) rgba(var(--color-button), 1);
-      transition: box-shadow 100ms ease;
     }
 
-    .button:hover::after {
-      box-shadow:
-        0 0 0 calc(var(--buttons-border-width) + 1.3px) rgba(var(--color-button-text), 0),
-        0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), 1);
+    .secondary-link {
+      color: var(--color-ink);
+      font-size: 1.45rem;
+      text-decoration: underline;
+    }
+
+    .event-card {
+      border: 1px solid var(--color-line);
+      border-radius: 4px;
+      background: #fff;
+      color: var(--color-ink);
+    }
+
+    .event-card h2 {
+      padding: 2.2rem 2.2rem 1.8rem;
+      border-bottom: 1px solid var(--color-line);
+      font-size: 1.9rem;
+    }
+
+    .fact-list {
+      display: grid;
+    }
+
+    .fact {
+      display: grid;
+      grid-template-columns: 94px minmax(0, 1fr);
+      gap: 1.8rem;
+      padding: 1.8rem 2.2rem;
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .fact:last-child {
+      border-bottom: 0;
+    }
+
+    .fact dt {
+      color: var(--color-muted);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08rem;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    .fact dd {
+      color: var(--color-ink);
+      font-size: 1.45rem;
+      line-height: 1.45;
     }
 
     .content-section {
-      padding: 6rem 5rem;
+      padding: 7rem 3rem;
       background: #fff;
+      border-bottom: 1px solid var(--color-line);
     }
 
     .content-section.gray {
-      background: #f3f3f3;
+      background: var(--color-panel);
+    }
+
+    .section-inner {
+      max-width: var(--page-width);
+      margin: 0 auto;
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+      gap: 7rem;
+      align-items: start;
+      margin-bottom: 4rem;
     }
 
     .section-title {
-      max-width: 880px;
-      margin: 0 auto 2rem;
-      text-align: center;
-      font-size: 3rem;
-      color: rgb(var(--color-foreground));
+      font-size: 3.5rem;
     }
 
     .section-copy {
-      max-width: 860px;
-      margin: 0 auto;
-      text-align: center;
-      color: rgba(var(--color-foreground), 0.75);
-      font-size: 1.6rem;
+      max-width: 610px;
+      color: var(--color-soft);
+      font-size: 1.65rem;
+      line-height: 1.65;
     }
 
     .tile-grid {
-      max-width: 1220px;
-      margin: 4rem auto 0;
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 2rem;
+      gap: 1.6rem;
     }
 
     .tile {
-      background: #fff;
-      border: 1px solid rgba(var(--color-foreground), 0.12);
-      border-radius: 4px;
+      min-height: 188px;
       padding: 2rem;
-      min-height: 210px;
+      border: 1px solid var(--color-line);
+      border-radius: 4px;
+      background: #fff;
+      display: grid;
+      align-content: start;
+      gap: 1.2rem;
+    }
+
+    .tile-index {
+      color: var(--color-accent);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.08rem;
+      line-height: 1;
     }
 
     .tile h3 {
-      color: rgb(var(--color-foreground));
       font-size: 2rem;
-      margin-bottom: 1rem;
     }
 
     .tile p {
-      margin: 0;
-      color: rgba(var(--color-foreground), 0.75);
-      font-size: 1.5rem;
-      line-height: 1.55;
+      color: var(--color-soft);
+      font-size: 1.45rem;
+      line-height: 1.5;
     }
 
     .product-strip {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 2rem;
-      max-width: 1120px;
-      margin: 4rem auto 0;
+    }
+
+    .product {
+      border-radius: 4px;
     }
 
     .product img {
       width: 100%;
       aspect-ratio: 1;
       object-fit: cover;
+      border: 1px solid var(--color-line);
       border-radius: 4px;
-      background: #f3f3f3;
+      background: var(--color-panel);
     }
 
     .product h3 {
-      color: rgb(var(--color-foreground));
-      font-size: 1.8rem;
       margin-top: 1.4rem;
+      color: var(--color-ink);
+      font-size: 1.8rem;
       text-align: center;
     }
 
-    .marquee {
-      height: 500px;
+    .product p {
+      margin-top: 0.5rem;
+      color: var(--color-muted);
+      font-size: 1.35rem;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .brand-strip {
+      height: 160px;
       overflow: hidden;
       background: #fff;
       position: relative;
+      border-bottom: 1px solid var(--color-line);
     }
 
-    .marquee-track {
+    .brand-strip-track {
       display: flex;
       height: 100%;
       width: max-content;
-      animation: marquee 26s linear infinite;
+      animation: marquee 34s linear infinite;
     }
 
-    .marquee img {
-      height: 500px;
+    .brand-strip img {
+      height: 160px;
       width: auto;
       max-width: none;
     }
@@ -365,15 +472,20 @@
     }
 
     footer {
-      padding: 6rem 5rem 5rem;
+      padding: 5.2rem 3rem 4.8rem;
       text-align: center;
       background: #fff;
       color: rgb(var(--color-foreground));
     }
 
     footer h2 {
-      font-size: 2.34rem;
-      margin-bottom: 2rem;
+      font-size: 2.4rem;
+      margin-bottom: 1.6rem;
+    }
+
+    footer p {
+      color: var(--color-muted);
+      font-size: 1.4rem;
     }
 
     @media (max-width: 989px) {
@@ -399,21 +511,46 @@
         display: none;
       }
 
-      .rich-text {
-        padding: 4rem 1.5rem 5rem;
+      .breadcrumb {
+        padding: 0 1.6rem;
+      }
+
+      .event-hero {
+        padding: 4.8rem 1.6rem 5rem;
+        grid-template-columns: 1fr;
+        gap: 3.6rem;
       }
 
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
 
-      .rich-text p,
-      .section-copy {
-        font-size: 1.5rem;
+      .hero-copy {
+        font-size: 1.65rem;
+      }
+
+      .event-card h2 {
+        padding: 1.8rem 1.6rem 1.4rem;
+      }
+
+      .fact {
+        grid-template-columns: 78px minmax(0, 1fr);
+        gap: 1.2rem;
+        padding: 1.5rem 1.6rem;
       }
 
       .content-section {
-        padding: 4rem 1.5rem;
+        padding: 5rem 1.6rem;
+      }
+
+      .section-header {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+        margin-bottom: 3rem;
+      }
+
+      .section-title {
+        font-size: 2.8rem;
       }
 
       .tile-grid,
@@ -421,35 +558,102 @@
         grid-template-columns: 1fr;
       }
 
-      .marquee,
-      .marquee img {
-        height: 260px;
+      .tile {
+        min-height: 0;
+      }
+
+      .brand-strip,
+      .brand-strip img {
+        height: 104px;
       }
     }
   </style>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "Chicago Watch Night",
-      "description": "A Chicago independent watch night with Mad Hudson, Farr + Swit, Alexander James Watches, Pour Souls Chicago, and local collectors.",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "location": {
-        "@type": "Place",
-        "name": "Pour Souls Chicago",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Chicago",
-          "addressRegion": "IL",
-          "addressCountry": "US"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://madhudsonwatches.com/#organization",
+          "name": "Mad Hudson Watches",
+          "url": "https://madhudsonwatches.com/",
+          "logo": "https://madhudsonwatches.com/cdn/shop/files/Mad_Hudson_Madman_Face_Logo.gif?v=1771269533&width=220"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://madhudsonwatches.com/#website",
+          "url": "https://madhudsonwatches.com/",
+          "name": "Mad Hudson Watches",
+          "publisher": {
+            "@id": "https://madhudsonwatches.com/#organization"
+          }
+        },
+        {
+          "@type": "Place",
+          "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue",
+          "name": "Pour Souls Chicago",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chicago",
+            "addressRegion": "IL",
+            "addressCountry": "US"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#webpage",
+          "url": "https://madhudsonwatches.com/pages/chicago-watch-night",
+          "name": "Chicago Watch Night - Mad Hudson Watches",
+          "description": "Chicago Watch Night event page for Mad Hudson Watches. Date, RSVP, and final event copy to be confirmed.",
+          "isPartOf": {
+            "@id": "https://madhudsonwatches.com/#website"
+          },
+          "publisher": {
+            "@id": "https://madhudsonwatches.com/#organization"
+          },
+          "about": {
+            "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#event"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://madhudsonwatches.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Events",
+              "item": "https://madhudsonwatches.com/pages/events"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Chicago Watch Night",
+              "item": "https://madhudsonwatches.com/pages/chicago-watch-night"
+            }
+          ]
+        },
+        {
+          "@type": "Event",
+          "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#event",
+          "name": "Chicago Watch Night",
+          "url": "https://madhudsonwatches.com/pages/chicago-watch-night",
+          "description": "Event details for Mad Hudson's Chicago Watch Night are being finalized.",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "location": {
+            "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue"
+          },
+          "organizer": {
+            "@id": "https://madhudsonwatches.com/#organization"
+          }
         }
-      },
-      "organizer": {
-        "@type": "Organization",
-        "name": "Mad Hudson Watches",
-        "url": "https://madhudsonwatches.com/"
-      }
+      ]
     }
   </script>
 </head>
@@ -474,61 +678,116 @@
     </div>
   </header>
 
-  <div class="announcement">Chicago watch night at Pour Souls. Details coming soon. &rarr;</div>
+  <div class="announcement">Chicago watch night at Pour Souls. Details coming soon.</div>
 
   <main id="MainContent">
     <div class="breadcrumb">Home <span>/</span> Events <span>/</span> Chicago Watch Night</div>
 
-    <section class="rich-text">
-      <h1>Chicago watch night.</h1>
-      <p>[insert event copy here]</p>
-      <a class="button" href="#">Details Soon</a>
+    <section class="event-hero" aria-labelledby="event-title">
+      <div>
+        <p class="eyebrow">Mad Hudson events / Chicago</p>
+        <h1 id="event-title">Chicago watch night.</h1>
+        <p class="hero-copy">[insert event copy here]</p>
+        <div class="hero-actions">
+          <a class="button" href="#">[insert CTA]</a>
+          <a class="secondary-link" href="#">[insert secondary link]</a>
+        </div>
+      </div>
+
+      <aside class="event-card" aria-labelledby="event-details-title">
+        <h2 id="event-details-title">Event details</h2>
+        <dl class="fact-list">
+          <div class="fact">
+            <dt>Date</dt>
+            <dd>[insert date]</dd>
+          </div>
+          <div class="fact">
+            <dt>Time</dt>
+            <dd>[insert time]</dd>
+          </div>
+          <div class="fact">
+            <dt>Venue</dt>
+            <dd>Pour Souls Chicago</dd>
+          </div>
+          <div class="fact">
+            <dt>RSVP</dt>
+            <dd>[insert RSVP link]</dd>
+          </div>
+          <div class="fact">
+            <dt>With</dt>
+            <dd>[insert final partner list]</dd>
+          </div>
+        </dl>
+      </aside>
     </section>
 
-    <section class="content-section gray">
-      <h2 class="section-title">[insert here]</h2>
-      <p class="section-copy">[insert here]</p>
-      <div class="tile-grid">
-        <article class="tile">
-          <h3>Mad Hudson</h3>
-          <p>Artist-designed watches, odd objects, and limited runs from the Hudson/Madman world.</p>
-        </article>
-        <article class="tile">
-          <h3>Farr + Swit</h3>
-          <p>Chicago-made tool-watch energy with deep roots in the local collector scene.</p>
-        </article>
-        <article class="tile">
-          <h3>Alexander James</h3>
-          <p>Another Chicago independent brand in the room, making the night feel like a scene instead of a single-brand event.</p>
-        </article>
-        <article class="tile">
-          <h3>Pour Souls</h3>
-          <p>Cocktails, hospitality, and the neighborhood reason to make a night of it.</p>
-        </article>
+    <section class="content-section gray" aria-labelledby="story-title">
+      <div class="section-inner">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Event story</p>
+            <h2 class="section-title" id="story-title">[insert here]</h2>
+          </div>
+          <p class="section-copy">[insert here]</p>
+        </div>
+
+        <div class="tile-grid">
+          <article class="tile">
+            <span class="tile-index">01</span>
+            <h3>Mad Hudson</h3>
+            <p>[insert partner role]</p>
+          </article>
+          <article class="tile">
+            <span class="tile-index">02</span>
+            <h3>Farr + Swit</h3>
+            <p>[insert partner role]</p>
+          </article>
+          <article class="tile">
+            <span class="tile-index">03</span>
+            <h3>Alexander James</h3>
+            <p>[insert partner role]</p>
+          </article>
+          <article class="tile">
+            <span class="tile-index">04</span>
+            <h3>Pour Souls</h3>
+            <p>[insert host note]</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="content-section">
-      <h2 class="section-title">On the table.</h2>
-      <p class="section-copy">We will bring a few pieces people can handle, try on, and photograph. Final lineup may change.</p>
-      <div class="product-strip">
-        <article class="product">
-          <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Broken_Time_Front_View.jpg?v=1772047746" alt="Broken Time watch by Brad Podray">
-          <h3>Broken Time</h3>
-        </article>
-        <article class="product">
-          <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/CD_Watch_front_view.png?v=1772061571" alt="CD Watch by Riki Prosper">
-          <h3>CD Watch</h3>
-        </article>
-        <article class="product">
-          <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Eddie_Blue_light_flare.jpg?v=1772062678" alt="Eddie Watch">
-          <h3>Eddie Watch</h3>
-        </article>
+    <section class="content-section" aria-labelledby="table-title">
+      <div class="section-inner">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Mad Hudson pieces</p>
+            <h2 class="section-title" id="table-title">On the table.</h2>
+          </div>
+          <p class="section-copy">[insert final product lineup note]</p>
+        </div>
+
+        <div class="product-strip">
+          <article class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Broken_Time_Front_View.jpg?v=1772047746" alt="Broken Time watch by Brad Podray">
+            <h3>Broken Time</h3>
+            <p>[confirm]</p>
+          </article>
+          <article class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/CD_Watch_front_view.png?v=1772061571" alt="CD Watch by Riki Prosper">
+            <h3>CD Watch</h3>
+            <p>[confirm]</p>
+          </article>
+          <article class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Eddie_Blue_light_flare.jpg?v=1772062678" alt="Eddie Watch">
+            <h3>Eddie Watch</h3>
+            <p>[confirm]</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="marquee" aria-label="Mad Hudson face marquee">
-      <div class="marquee-track">
+    <section class="brand-strip" aria-label="Mad Hudson face marquee">
+      <div class="brand-strip-track">
         <img src="https://madhudsonwatches.com/cdn/shop/files/rowoffaces_eeae1762-3b32-486e-b631-939dc2fcc4de.png?v=1744861388&width=1920" alt="">
         <img src="https://madhudsonwatches.com/cdn/shop/files/rowoffaces_eeae1762-3b32-486e-b631-939dc2fcc4de.png?v=1744861388&width=1920" alt="">
       </div>
