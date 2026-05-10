@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Chicago Watch Night - Mad Hudson Watches</title>
-  <meta name="description" content="Chicago Watch Night event page for Mad Hudson Watches. Date, RSVP, and final event copy to be confirmed.">
+  <title>The Unwind - Chicago Watch Meetup | Mad Hudson Watches</title>
+  <meta name="description" content="The Unwind is a Chicago watch meetup and kickback from Mad Hudson at Pour Souls Cocktail Store on May 23, 2026, with Farr + Swit, Alexander James Watches, cocktails, and event-exclusive deals.">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap');
 
@@ -343,29 +343,6 @@
       line-height: 1.45;
     }
 
-    .with-line {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      border: 1px solid var(--color-line);
-      border-radius: 4px;
-      background: #fff;
-    }
-
-    .with-line span {
-      min-height: 86px;
-      display: flex;
-      align-items: center;
-      padding: 1.8rem 2rem;
-      border-right: 1px solid var(--color-line);
-      color: var(--color-ink);
-      font-size: 1.65rem;
-      line-height: 1.3;
-    }
-
-    .with-line span:last-child {
-      border-right: 0;
-    }
-
     .content-section {
       padding: 7rem 3rem;
       background: #fff;
@@ -643,21 +620,10 @@
         font-size: 2.8rem;
       }
 
-      .with-line,
       .tile-grid,
       .faq-grid,
       .product-strip {
         grid-template-columns: 1fr;
-      }
-
-      .with-line span {
-        min-height: 0;
-        border-right: 0;
-        border-bottom: 1px solid var(--color-line);
-      }
-
-      .with-line span:last-child {
-        border-bottom: 0;
       }
 
       .tile {
@@ -693,11 +659,13 @@
         {
           "@type": "Place",
           "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue",
-          "name": "Pour Souls Chicago",
+          "name": "Pour Souls Cocktail Store",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "1740 W Division St",
             "addressLocality": "Chicago",
             "addressRegion": "IL",
+            "postalCode": "60622",
             "addressCountry": "US"
           }
         },
@@ -705,8 +673,8 @@
           "@type": "WebPage",
           "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#webpage",
           "url": "https://madhudsonwatches.com/pages/chicago-watch-night",
-          "name": "Chicago Watch Night - Mad Hudson Watches",
-          "description": "Chicago Watch Night event page for Mad Hudson Watches. Date, RSVP, and final event copy to be confirmed.",
+          "name": "The Unwind - Chicago Watch Meetup | Mad Hudson Watches",
+          "description": "The Unwind is a Chicago watch meetup and kickback from Mad Hudson at Pour Souls Cocktail Store on May 23, 2026, with Farr + Swit, Alexander James Watches, cocktails, and event-exclusive deals.",
           "isPartOf": {
             "@id": "https://madhudsonwatches.com/#website"
           },
@@ -739,7 +707,7 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Chicago Watch Night",
+              "name": "The Unwind",
               "item": "https://madhudsonwatches.com/pages/chicago-watch-night"
             }
           ]
@@ -747,10 +715,14 @@
         {
           "@type": "Event",
           "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#event",
-          "name": "Chicago Watch Night",
+          "name": "The Unwind: Chicago Watch Meetup and Kickback",
           "url": "https://madhudsonwatches.com/pages/chicago-watch-night",
-          "description": "Event details for Mad Hudson's Chicago Watch Night are being finalized.",
+          "description": "Mad Hudson's first Chicago meetup at Pour Souls Cocktail Store with Farr + Swit and Alexander James Watches: watches, cocktails by Pour Souls, DJ, event-exclusive deals, and a casual collector kickback.",
+          "startDate": "2026-05-23T15:00:00-05:00",
+          "endDate": "2026-05-23T19:00:00-05:00",
+          "eventStatus": "https://schema.org/EventScheduled",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "isAccessibleForFree": true,
           "location": {
             "@id": "https://madhudsonwatches.com/pages/chicago-watch-night#venue"
           },
@@ -783,19 +755,19 @@
     </div>
   </header>
 
-  <div class="announcement">Chicago watch night at Pour Souls. Details coming soon.</div>
+  <div class="announcement">The Unwind. May 23, 3-7 PM at Pour Souls Cocktail Store.</div>
 
   <main id="MainContent">
-    <div class="breadcrumb">Home <span>/</span> Events <span>/</span> Chicago Watch Night</div>
+    <div class="breadcrumb">Home <span>/</span> Events <span>/</span> The Unwind</div>
 
     <section class="event-hero" aria-labelledby="event-title">
       <div>
         <p class="eyebrow">Mad Hudson events / Chicago</p>
-        <h1 id="event-title">Chicago watch night.</h1>
-        <p class="hero-copy">[insert event copy here]</p>
+        <h1 id="event-title">The Unwind.</h1>
+        <p class="hero-copy">Watch meetup and kickback at Pour Souls Cocktail Store. Bring a few favorites to show off, or come start your collection here.</p>
         <div class="hero-actions">
-          <a class="button" href="#">[insert RSVP CTA]</a>
-          <p class="cta-note">[insert what happens after RSVP]</p>
+          <a class="button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Unwind%3A%20Chicago%20Watch%20Meetup&dates=20260523T200000Z/20260524T000000Z&details=Watch%20meetup%20and%20kickback%20with%20Mad%20Hudson%2C%20Pour%20Souls%2C%20Farr%20%2B%20Swit%2C%20and%20Alexander%20James%20Watches.&location=Pour%20Souls%20Cocktail%20Store%2C%201740%20W%20Division%20St%2C%20Chicago%2C%20IL">Add to Calendar</a>
+          <p class="cta-note">Formal RSVP link not posted yet.</p>
         </div>
       </div>
 
@@ -804,27 +776,27 @@
         <dl class="fact-list">
           <div class="fact">
             <dt>Date</dt>
-            <dd>[insert date]</dd>
+            <dd>May 23, 2026</dd>
           </div>
           <div class="fact">
             <dt>Time</dt>
-            <dd>[insert time]</dd>
+            <dd>3-7 PM</dd>
           </div>
           <div class="fact">
             <dt>Venue</dt>
-            <dd>Pour Souls Chicago</dd>
+            <dd>Pour Souls Cocktail Store</dd>
           </div>
           <div class="fact">
             <dt>Address</dt>
-            <dd>[insert street address]</dd>
+            <dd>1740 W Division St, Chicago</dd>
           </div>
           <div class="fact">
             <dt>RSVP</dt>
-            <dd>[insert RSVP status]</dd>
+            <dd>Open meetup; formal RSVP link not posted yet.</dd>
           </div>
           <div class="fact">
             <dt>Hosts</dt>
-            <dd>[insert final partner list]</dd>
+            <dd>Mad Hudson, Pour Souls, Farr + Swit, Alexander James Watches</dd>
           </div>
         </dl>
       </aside>
@@ -835,16 +807,32 @@
         <div class="section-header">
           <div>
             <p class="eyebrow">Why show up</p>
-            <h2 class="section-title" id="story-title">[insert here]</h2>
+            <h2 class="section-title" id="story-title">Who you'll see.</h2>
           </div>
-          <p class="section-copy">[insert here]</p>
+          <p class="section-copy">Shop, cocktails, DJ, and watches on wrists. Alexander James and Farr + Swit are in the room, Pour Souls is handling cocktails, and the event will include exclusive deals and discounts.</p>
         </div>
 
-        <div class="with-line" aria-label="Event hosts and partners">
-          <span>Mad Hudson</span>
-          <span>Farr + Swit</span>
-          <span>Alexander James Watches</span>
-          <span>Pour Souls Chicago</span>
+        <div class="tile-grid" aria-label="Who you will see at the event">
+          <article class="tile">
+            <span class="tile-index">01</span>
+            <h3>Alexander James</h3>
+            <p>Independent watches on-site.</p>
+          </article>
+          <article class="tile">
+            <span class="tile-index">02</span>
+            <h3>Farr + Swit</h3>
+            <p>Independent watches on-site.</p>
+          </article>
+          <article class="tile">
+            <span class="tile-index">03</span>
+            <h3>Pour Souls</h3>
+            <p>Cocktails by the host venue.</p>
+          </article>
+          <article class="tile">
+            <span class="tile-index">04</span>
+            <h3>Event exclusives</h3>
+            <p>Deals and discounts available at the meetup.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -856,24 +844,24 @@
             <p class="eyebrow">Mad Hudson pieces</p>
             <h2 class="section-title" id="table-title">On the table.</h2>
           </div>
-          <p class="section-copy">[insert final product lineup note]</p>
+          <p class="section-copy">Expected Mad Hudson pieces for the table. Confirm the final lineup before this moves from mockup to live site.</p>
         </div>
 
         <div class="product-strip">
           <article class="product">
             <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Broken_Time_Front_View.jpg?v=1772047746" alt="Broken Time watch by Brad Podray">
             <h3>Broken Time</h3>
-            <p>[confirm]</p>
+            <p>Expected</p>
           </article>
           <article class="product">
             <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/CD_Watch_front_view.png?v=1772061571" alt="CD Watch by Riki Prosper">
             <h3>CD Watch</h3>
-            <p>[confirm]</p>
+            <p>Expected</p>
           </article>
           <article class="product">
             <img src="https://cdn.shopify.com/s/files/1/0657/0111/8006/files/Eddie_Blue_light_flare.jpg?v=1772062678" alt="Eddie Watch">
             <h3>Eddie Watch</h3>
-            <p>[confirm]</p>
+            <p>Expected</p>
           </article>
         </div>
       </div>
@@ -886,35 +874,35 @@
             <p class="eyebrow">Logistics</p>
             <h2 class="section-title" id="logistics-title">Before you go.</h2>
           </div>
-          <p class="section-copy">[insert concise logistics note]</p>
+          <p class="section-copy">Date, time, venue, and address are now confirmed. Before the site page goes live, confirm whether there is an RSVP flow, capacity limit, and any age or access notes from Pour Souls.</p>
         </div>
 
         <div class="faq-grid">
           <article class="faq-item">
             <h3>RSVP</h3>
-            <p>[insert whether RSVP is required, free, limited, or waitlist]</p>
+            <p>No formal RSVP link is shown yet. If one is added, this page should use that as the single primary action.</p>
           </article>
           <article class="faq-item">
             <h3>Getting there</h3>
-            <p>[insert address, parking, rideshare, or transit note]</p>
+            <p>Pour Souls Cocktail Store, 1740 W Division St, Chicago. Add parking, transit, or rideshare notes if the venue provides them.</p>
           </article>
           <article class="faq-item">
             <h3>At the venue</h3>
-            <p>[insert age requirement, drink/food note, and what attendees should expect]</p>
+            <p>Watch meetup and kickback with shop, cocktails, DJ, and event-exclusive deals. Confirm age requirements before the live page goes up.</p>
           </article>
           <article class="faq-item">
             <h3>Access</h3>
-            <p>[insert accessibility or event contact note]</p>
+            <p>Add an accessibility or contact note before publishing so people know who to reach with event questions.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="final-cta" aria-labelledby="rsvp-title">
-      <p class="eyebrow">RSVP</p>
-      <h2 id="rsvp-title">[insert final RSVP headline]</h2>
-      <p>[insert final reassurance or capacity note]</p>
-      <a class="button" href="#">[insert RSVP CTA]</a>
+      <p class="eyebrow">Save the date</p>
+      <h2 id="rsvp-title">May 23 at Pour Souls.</h2>
+      <p>Once a formal RSVP link exists, this button should switch from calendar save to the final RSVP action.</p>
+      <a class="button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Unwind%3A%20Chicago%20Watch%20Meetup&dates=20260523T200000Z/20260524T000000Z&details=Watch%20meetup%20and%20kickback%20with%20Mad%20Hudson%2C%20Pour%20Souls%2C%20Farr%20%2B%20Swit%2C%20and%20Alexander%20James%20Watches.&location=Pour%20Souls%20Cocktail%20Store%2C%201740%20W%20Division%20St%2C%20Chicago%2C%20IL">Add to Calendar</a>
     </section>
 
     <section class="brand-strip" aria-label="Mad Hudson face marquee">
