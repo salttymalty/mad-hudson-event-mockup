@@ -299,6 +299,16 @@
         0 0 0 var(--buttons-border-width) rgba(var(--color-button), 1);
     }
 
+    .button.secondary {
+      background: #fff;
+      color: var(--color-ink);
+      border: 1px solid var(--color-ink);
+    }
+
+    .button.secondary::after {
+      box-shadow: none;
+    }
+
     .cta-note {
       max-width: 320px;
       color: var(--color-muted);
@@ -376,9 +386,17 @@
     }
 
     .event-card h2 {
-      padding: 2.2rem 2.2rem 1.8rem;
+      padding: 1.8rem 2rem 1.5rem;
       border-bottom: 1px solid var(--color-line);
       font-size: 1.9rem;
+    }
+
+    .event-card-intro {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--color-line);
+      color: var(--color-soft);
+      font-size: 1.45rem;
+      line-height: 1.5;
     }
 
     .fact-list {
@@ -388,8 +406,8 @@
     .fact {
       display: grid;
       grid-template-columns: 94px minmax(0, 1fr);
-      gap: 1.8rem;
-      padding: 1.8rem 2.2rem;
+      gap: 1.5rem;
+      padding: 1.45rem 2rem;
       border-bottom: 1px solid var(--color-line);
     }
 
@@ -410,6 +428,20 @@
       color: var(--color-ink);
       font-size: 1.45rem;
       line-height: 1.45;
+    }
+
+    .event-card-actions {
+      display: grid;
+      gap: 1rem;
+      padding: 1.5rem 2rem 2rem;
+      border-top: 1px solid var(--color-line);
+    }
+
+    .event-card-actions .button {
+      width: 100%;
+      min-height: 44px;
+      padding: 0 1.8rem;
+      font-size: 1.35rem;
     }
 
     .content-section {
@@ -1076,7 +1108,8 @@
       </div>
 
       <aside class="event-card" aria-labelledby="event-details-title">
-        <h2 id="event-details-title">Event details</h2>
+        <h2 id="event-details-title">Event at a glance</h2>
+        <p class="event-card-intro">Date, venue, partners, entry, map, and calendar link in one place.</p>
         <dl class="fact-list">
           <div class="fact">
             <dt>Date</dt>
@@ -1102,7 +1135,19 @@
             <dt>Hosts</dt>
             <dd>Mad Hudson, Pour Souls, Farr + Swit, Alexander James Watches</dd>
           </div>
+          <div class="fact">
+            <dt>Happening</dt>
+            <dd>Watch meetup and kickback with cocktails, DJ, and event-exclusive deals.</dd>
+          </div>
+          <div class="fact">
+            <dt>Bring</dt>
+            <dd>Friends, a few favorites to show off, or just come start your collection there.</dd>
+          </div>
         </dl>
+        <div class="event-card-actions">
+          <a class="button" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Unwind%3A%20Chicago%20Watch%20Meetup&dates=20260523T200000Z/20260524T000000Z&details=Watch%20meetup%20and%20kickback%20with%20Mad%20Hudson%2C%20Pour%20Souls%2C%20Farr%20%2B%20Swit%2C%20and%20Alexander%20James%20Watches.&location=Pour%20Souls%20Cocktail%20Store%2C%201740%20W%20Division%20St%2C%20Chicago%2C%20IL">Save the Date</a>
+          <a class="button secondary" href="https://www.google.com/maps/search/?api=1&query=Pour%20Souls%20Cocktail%20Store%201740%20W%20Division%20St%20Chicago" target="_blank" rel="noopener">Open in Maps</a>
+        </div>
       </aside>
     </section>
 
