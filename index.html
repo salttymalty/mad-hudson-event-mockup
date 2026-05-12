@@ -190,8 +190,52 @@
       line-height: 1.2;
     }
 
-    .mobile-event-summary {
-      display: none;
+    .event-summary {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      max-width: var(--page-width);
+      margin: 0 auto;
+      border-right: 1px solid var(--color-line);
+      border-left: 1px solid var(--color-line);
+      background: #fff;
+    }
+
+    .event-summary div {
+      min-height: 76px;
+      padding: 1.45rem 2rem 1.35rem;
+      border-right: 1px solid var(--color-line);
+    }
+
+    .event-summary div:last-child {
+      border-right: 0;
+    }
+
+    .event-summary dt {
+      margin: 0 0 0.55rem;
+      color: var(--color-muted);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.08rem;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    .event-summary dd {
+      color: var(--color-ink);
+      font-size: 1.55rem;
+      font-weight: 600;
+      letter-spacing: 0.02rem;
+      line-height: 1.2;
+    }
+
+    .event-summary a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+    }
+
+    .event-summary dt,
+    .event-summary dd {
+      margin: 0;
     }
 
     .breadcrumb {
@@ -206,11 +250,6 @@
     }
 
     .breadcrumb span { margin: 0 0.55rem; }
-
-    .mobile-event-summary dt,
-    .mobile-event-summary dd {
-      margin: 0;
-    }
 
     h1,
     h2,
@@ -766,44 +805,29 @@
         display: none;
       }
 
-      .mobile-event-summary {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+      .event-summary {
+        max-width: none;
         border-bottom: 1px solid var(--color-line);
-        background: #fff;
-      }
-
-      .mobile-event-summary div {
-        min-height: 66px;
-        padding: 1.15rem 1.2rem 1.05rem;
-        border-right: 1px solid var(--color-line);
-      }
-
-      .mobile-event-summary div:last-child {
+        border-left: 0;
         border-right: 0;
       }
 
-      .mobile-event-summary dt {
+      .event-summary div {
+        min-height: 66px;
+        padding: 1.15rem 1.2rem 1.05rem;
+      }
+
+      .event-summary div:last-child {
+        border-right: 0;
+      }
+
+      .event-summary dt {
         margin-bottom: 0.45rem;
-        color: var(--color-muted);
         font-size: 0.95rem;
-        font-weight: 600;
-        letter-spacing: 0.08rem;
-        line-height: 1.15;
-        text-transform: uppercase;
       }
 
-      .mobile-event-summary dd {
-        color: var(--color-ink);
+      .event-summary dd {
         font-size: 1.32rem;
-        font-weight: 600;
-        letter-spacing: 0.02rem;
-        line-height: 1.2;
-      }
-
-      .mobile-event-summary a {
-        color: inherit;
-        text-decoration-thickness: 1px;
       }
 
       .event-hero {
@@ -1126,7 +1150,7 @@
   <div class="announcement">The Unwind / May 23, 3-7 PM / Pour Souls Cocktail Store</div>
 
   <main id="MainContent">
-    <dl class="mobile-event-summary" aria-label="Event quick facts">
+    <dl class="event-summary" aria-label="Event quick facts">
       <div>
         <dt>Date</dt>
         <dd><time datetime="2026-05-23">May 23</time></dd>
